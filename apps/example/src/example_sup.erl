@@ -30,6 +30,10 @@ init([]) ->
                  intensity => 0,
                  period => 1},
     ChildSpecs = [],
+    Encoded_Jason = 'Elixir.Jason':'encode!'( #{"age" => 44, "name" => <<"Steve Irwin">>, "nationality" => <<"Australian">>} ),
+    Decoded_Jason = 'Elixir.Jason':'decode!'(Encoded_Jason),
+    io:format("Decoded_Jason=~p", [Decoded_Jason]),
+
     {ok, {SupFlags, ChildSpecs}}.
 
 %% internal functions
