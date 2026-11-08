@@ -1,0 +1,11 @@
+-sname example
+
+-setcookie example_cookie
+
++A30
+
+## Protocols consolidated by `rebar3 mix consolidate_protocols` are copied
+## here by the overlay in rebar.config. -pa puts them ahead of the
+## unconsolidated protocol modules shipped in the Elixir apps.
+## ROOTDIR and RELEASE_VSN are exported by the relx start script.
+-pa ${ROOTDIR}/releases/${RELEASE_VSN}/consolidated
