@@ -32,7 +32,7 @@ init([]) ->
     ChildSpecs = [],
     Encoded_Jason = 'Elixir.Jason':'encode!'( #{"age" => 44, "name" => <<"Steve Irwin">>, "nationality" => <<"Australian">>} ),
     Decoded_Jason = 'Elixir.Jason':'decode!'(Encoded_Jason),
-    io:format("Decoded_Jason=~p", [Decoded_Jason]),
+    io:format("Decoded_Jason=~p~n", [Decoded_Jason]),
 
     {ok, {SupFlags, ChildSpecs}}.
 
